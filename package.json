@@ -1,0 +1,33 @@
+{
+  "name": "wxt-cors-bug",
+  "description": "WXT CORS Bug",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "dev:firefox": "wxt -b firefox",
+    "build": "wxt build",
+    "build:dev": "wxt build --mode development",
+    "build:firefox": "wxt build -b firefox",
+    "zip": "wxt zip",
+    "zip:firefox": "wxt zip -b firefox",
+    "compile": "tsc --noEmit",
+    "postinstall": "wxt prepare",
+    "prepare:debug": "wxt prepare --debug",
+    "prepare": "wxt prepare",
+    "analyze": "wxt build --analyze --analyze-open",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router": "^7.5.3",
+    "vite-plugin-svgr": "^4.3.0"
+  },
+  "devDependencies": {
+    "@wxt-dev/module-react": "^1.1.3",
+    "vitest": "^3.1.3",
+    "wxt": "0.20.6"
+  }
+}
